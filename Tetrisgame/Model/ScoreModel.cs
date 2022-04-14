@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +10,8 @@ namespace Tetrisgame.Model
     {
         public string NickName { get; set; }
         public int Score { get; set; }
-        
+        public DateTime Datetime { get; set; }
+
         public ScoreModel()
         {
 
