@@ -1,4 +1,4 @@
-﻿<Window x:Class="Tetrisgame.MainWindow"
+<Window x:Class="Tetrisgame.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -69,7 +69,7 @@
                    Grid.Column="3"
                    FontSize="20"
                    FontStyle="Italic"
-                   Foreground="Black"
+                   Foreground="Orange"
 
                    TextAlignment="Center" Grid.ColumnSpan="2" Margin="242,0,0,0"/>
 
@@ -77,11 +77,11 @@
                     Grid.Column="2"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Left" Grid.ColumnSpan="2" Margin="157,0,0,0">
-            <TextBlock Text="Giữ"
+            <TextBlock Text="Giữ - C"
                        FontSize="30"
                        FontStyle="Italic"
                        FontWeight="Black"
-                       Foreground="White"
+                       Foreground="Yellow"
                        TextAlignment="Center"/>
 
             <Image x:Name="HoldImage"
@@ -93,11 +93,11 @@
                     Grid.Column="3"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Left" Grid.ColumnSpan="2" Margin="242,0,0,0">
-            <TextBlock Text="Tiếp"
+            <TextBlock Text="Tiếp - Continute"
                        FontSize="30"
                        FontStyle="Italic"
                        FontWeight="Heavy"
-                       Foreground="White"
+                       Foreground="Yellow"
                        TextAlignment="Center"/>
 
             <Image x:Name="NextImage"
