@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -226,7 +226,8 @@ namespace Tetrisgame
                 var res = "";
                 foreach(ScoreModel score in scoreModels)
                 {
-                    res += score.NickName + ": \t" + score.Score + "pts" + Environment.NewLine;
+                    string day = score.Datetime.Day.ToString()+ "/" + score.Datetime.Month.ToString() + "/" + score.Datetime.Year.ToString();
+                    res += score.NickName + ": \t" + score.Score + "pts \t" + day + Environment.NewLine;
                 }
                 txtHighScore.Text = res;
             }catch(Exception e)
@@ -262,7 +263,7 @@ namespace Tetrisgame
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine(e.Message);
+                    Console.WriteLine(e.Message);   
                 }
             }
             
